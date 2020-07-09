@@ -4,4 +4,5 @@ FROM wordpress:5.4.2-apache
 
 USER www-data:www-data
 
+RUN apt-get update && apt-get install -y git
 RUN git clone https://github.com/usdigitalresponse/election-websites/ /var/www/html/wp-content/themes
