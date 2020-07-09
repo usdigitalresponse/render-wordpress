@@ -7,4 +7,4 @@ USER root:root
 RUN apt-get update && apt-get install -y git
 
 USER www-data:www-data
-RUN git clone https://github.com/usdigitalresponse/election-websites/ /var/www/html/wp-content/themes
+RUN git clone https://github.com/usdigitalresponse/election-websites/ /var/www/html/wp-content/themes/ctcl
