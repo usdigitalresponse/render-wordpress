@@ -2,7 +2,7 @@
 # https://hub.docker.com/_/wordpress
 FROM wordpress:5.4.2-apache
 
-USER root:wheel
+USER root:root
 
 RUN apt-get update && apt-get install -y git
 
