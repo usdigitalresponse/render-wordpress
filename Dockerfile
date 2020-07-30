@@ -4,7 +4,7 @@ FROM wordpress:5.4.2-php7.4-apache
 
 USER root:root
 
-RUN apt-get update && apt-get install -y git vim
+RUN apt-get update && apt-get install -y git vim default-mysql-client
 
 USER www-data:www-data
 RUN git clone https://github.com/usdigitalresponse/election-websites/ /var/www/html/wp-content/themes/ctcl
