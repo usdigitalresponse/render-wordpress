@@ -1,6 +1,6 @@
 # You can change this to a different version of WordPress available at
 # https://hub.docker.com/_/wordpress
-FROM wordpress:5.6.2-php7.4-apache
+FROM wordpress:apache
 
 USER root:root
 
